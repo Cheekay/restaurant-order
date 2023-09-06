@@ -39,7 +39,7 @@ header {
     margin-left: 30px;
 }
 
-#add-btn {
+.add-btn {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -49,15 +49,6 @@ header {
     position: absolute;
     right: 0;
 }
-#divider {
-    /* display: block;
-    height: 3px;
-    border: 0;
-    border-top: 1px solid #D2D2D2;
-    margin: 1em 0;
-    padding: 0; */
-    background-color: red;
-}
 
 /* checkout section */
 #checkout-section {
@@ -66,7 +57,7 @@ header {
     margin-top: 40px;
 }
 
-#order-details h2 {
+#pre-checkout h2 {
     text-align: center;
 }
 

@@ -12,7 +12,7 @@ function returnMenuArray(menuArr) {
 						<p class="item-desc">${ingredients}</p>
 						<h4 class="item-price">$${price}</h4>
 					</div>
-						<button id="add-btn">+</button>
+						<button class="add-btn">+</button>
 				</div>
         `;
 		})
@@ -20,3 +20,22 @@ function returnMenuArray(menuArr) {
 }
 
 document.getElementById("itemList").innerHTML = returnMenuArray(menuArray);
+
+function displayPreCheckout(menuArr) {
+	const addBTN = document.querySelectorAll(".add-btn");
+	const preCheckout = document.getElementById("pre-checkout");
+	const title = document.createElement("h2");
+	title.innerText = "Your Order";
+	preCheckout.appendChild(title);
+
+	menuArr.map((item) => {
+		const { name, id, price } = item;
+		addBTN.forEach((element) => {
+			element.addEventListener("click", function (id) {
+				console.log(item.name, item.price, item.id);
+			});
+		});
+	});
+}
+
+displayPreCheckout(menuArray);
