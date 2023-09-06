@@ -10,7 +10,7 @@ function returnMenuArray(menuArr) {
 					<div class="item-details">
 						<h3 class="item-name">${name}</h3>
 						<p class="item-desc">${ingredients}</p>
-						<h4 class="item-price">${price}</h4>
+						<h4 class="item-price">$${price}</h4>
 					</div>
 						<button id="add-btn">+</button>
 				</div>

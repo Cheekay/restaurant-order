@@ -19,6 +19,25 @@
 				<p>The best burgers and pizzas in town</p>
 			</header>
 			<section id="itemList"></section>
+			<section id="checkout-section">
+				<div id="order-details">
+					<h2>Your Order</h2>
+					<ul id="list-items">
+						<li>
+							Pizza <button class="remove-item">remove</button>
+							<span class="item-price">$14</span>
+						</li>
+						<li>
+							Beer <button class="remove-item">remove</button>
+							<span class="item-price">$12</span>
+						</li>
+					</ul>
+					<li id="total-price">
+						Total Price: <span class="item-price">$26</span>
+					</li>
+					<button id="purchase-btn">Complete Order</button>
+				</div>
+			</section>
 		</div>
 		<script src="index.js" type="module"></script>
 	</body>

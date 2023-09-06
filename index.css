@@ -49,4 +49,69 @@ header {
     position: absolute;
     right: 0;
 }
+#divider {
+    /* display: block;
+    height: 3px;
+    border: 0;
+    border-top: 1px solid #D2D2D2;
+    margin: 1em 0;
+    padding: 0; */
+    background-color: red;
+}
+
+/* checkout section */
+#checkout-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#order-details h2 {
+    text-align: center;
+}
+
+.item-price {
+    margin-left: auto;
+    font-size: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid #393333;
+}
+
+li {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+#total-price {
+    margin-bottom: 50px;
+}
+
+li button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    border: none;
+    color: #BBBBBB;
+    background-color: white;
+    padding: 0;
+    padding-left: 10px;
+}
+
+#purchase-btn {
+    background-color: #16DB99;
+    width: 508px;
+    height: 60px;
+    color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+
 
