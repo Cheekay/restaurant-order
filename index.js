@@ -4,6 +4,7 @@ function returnMenuArray(menuArr) {
 	return menuArr
 		.map((item) => {
 			const { name, ingredients, id, price, emoji } = item;
+			let count = 0;
 			return `
             <div class="item">
 					<div class="emoji">${emoji}</div>
@@ -12,7 +13,7 @@ function returnMenuArray(menuArr) {
 						<p class="item-desc">${ingredients}</p>
 						<h4 class="item-price">$${price}</h4>
 					</div>
-						<button class="add-btn">+</button>
+						<button class="add-btn" data-id=${count++}>+</button>
 				</div>
         `;
 		})
@@ -28,11 +29,13 @@ function displayPreCheckout(menuArr) {
 	title.innerText = "Your Order";
 	preCheckout.appendChild(title);
 
+	console.log(addBTN);
+
 	menuArr.map((item) => {
 		const { name, id, price } = item;
 		addBTN.forEach((element) => {
-			element.addEventListener("click", function (id) {
-				console.log(item.name, item.price, item.id);
+			element.addEventListener("click", function () {
+				console.log(addBTN);
 			});
 		});
 	});
