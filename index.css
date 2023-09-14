@@ -62,8 +62,8 @@ header {
 }
 
 .item-price {
-    margin-left: auto;
     font-size: 20px;
+    margin-left: auto;
 }
 
 
@@ -83,7 +83,7 @@ li {
     margin-bottom: 50px;
 }
 
-li button {
+.remove-item {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
     border: none;
@@ -91,6 +91,11 @@ li button {
     background-color: white;
     padding: 0;
     padding-left: 10px;
+}
+
+.remove-item:hover {
+    cursor: pointer;
+    color: red;
 }
 
 #purchase-btn {
@@ -102,6 +107,7 @@ li button {
     font-size: 16px;
     font-weight: bold;
     border: none;
+    display: none;
 }
 
 
