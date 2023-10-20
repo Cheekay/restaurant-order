@@ -17,7 +17,7 @@ function returnMenuArray(menuArr) {
 						<p class="item-desc">${ingredients}</p>
 						<h4 class="item-price">$${price}</h4>
 					</div>
-						<button class="add-btn" data-id=${id}">+</button>
+						<button class="add-btn" data-id=${id}>+</button>
 				</div>
         `;
 		})
@@ -46,7 +46,7 @@ function displayPreCheckout() {
 					const checkoutList = document.getElementById("checkout-list");
 					const checkoutItem = document.createElement("li");
 					checkoutItem.innerHTML = `
-							${name} <button class="remove-item">remove</button>
+							${name} <button class="remove-item" data-id=${id}>remove</button>
 							<span class="item-price">$${price}</span>
 						`;
 					checkoutList.appendChild(checkoutItem);
@@ -61,6 +61,7 @@ function displayPreCheckout() {
 					Total Price: <span class="item-price">$${totalPriceSum}</span>
 					`;
 
+					//Display the complete purchae button
 					const purchaseBTN = document.getElementById("purchase-btn");
 					purchaseBTN.style.display = "block";
 				}
@@ -70,7 +71,25 @@ function displayPreCheckout() {
 }
 
 function removeItem() {
-	
+	let targetButton = document.querySelectorAll(".remove-item");
+
+	targetButton.forEach((button) => {
+		const buttonId = targetButton.getAttribute("data-id");
+		console.log(button.buttonId);
+	});
+
+	// targetButton.map((removeBtn) => {
+	// 	console.log(removeBtn);
+	// });
+
+	// targetButton.forEach((button) => {
+	// 	button.addEventListener("click", function () {
+	// 		const buttonId = document.getAttribute("data-id");
+	// 		console.log(button.buttonId);
+	// 		console.log(button);
+	// 	});
+	// });
 }
 
 displayPreCheckout();
+removeItem();
